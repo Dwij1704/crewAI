@@ -49,7 +49,6 @@ tools = ["crewai-tools>=0.36.0"]
 embeddings = [
     "tiktoken~=0.7.0"
 ]
-agentops = ["agentops>=0.3.0"]
 fastembed = ["fastembed>=0.4.1"]
 pdfplumber = [
     "pdfplumber>=0.11.4",

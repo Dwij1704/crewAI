@@ -40,22 +40,6 @@ resolution-markers = [
 ]
 
 [[package]]
-name = "agentops"
-version = "0.3.14"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "packaging" },
-    { name = "psutil" },
-    { name = "pyyaml" },
-    { name = "requests" },
-    { name = "termcolor" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/46/cb/183fdaf40ae97ac1806ba91f6f23d55dc0a1a5cdf0881a5c834c8ca7175a/agentops-0.3.14.tar.gz", hash = "sha256:fcb515e5743d73efee851b687692bed74797dc88e29a8327b2bbfb21d73a7447", size = 48548 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/1c/27/75ab5bf99341a6a02775e3858f54a18cbcda0f35b5c6c0f114a829d62b8e/agentops-0.3.14-py3-none-any.whl", hash = "sha256:f4a2fcf1a7caf1d5383bfb66d8a9d567f3cb88fc7495cfd81ade167b0c06a4ea", size = 50825 },
-]
-
-[[package]]
 name = "aiohappyeyeballs"
 version = "2.4.3"
 source = { registry = "https://pypi.org/simple" }
@@ -648,9 +632,7 @@ dependencies = [
 ]
 
 [package.optional-dependencies]
-agentops = [
-    { name = "agentops" },
-]
+
 docling = [
     { name = "docling" },
 ]
@@ -697,7 +679,6 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "agentops", marker = "extra == 'agentops'", specifier = ">=0.3.0" },
     { name = "appdirs", specifier = ">=1.4.4" },
     { name = "auth0-python", specifier = ">=4.7.1" },
     { name = "blinker", specifier = ">=1.9.0" },
